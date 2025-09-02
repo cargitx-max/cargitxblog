@@ -666,7 +666,7 @@ menuHorizontal.addEventListener('mouseleave', () => {
 	    <style>     
 
 		 
-		   #seccion-dinamica  {
+	  #seccion-dinamica  {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -699,20 +699,22 @@ menuHorizontal.addEventListener('mouseleave', () => {
         /* Subtítulo (60% de ancho) */
         #seccion-dinamica .subtitulo {
             width: 60%;
-            padding: 24px;
+            padding: 0;
             box-sizing: border-box;
         }
 
         #seccion-dinamica .subtitulo h2 {
             margin: 0;
-            font-size: 20px;
+            font-size: 22px;
             color: #333;
+			  padding: 0px 20px;
         }
 
         #seccion-dinamica .subtitulo p {
             color: #555;
             line-height: 1.6;
-			font-size: 18px;
+			font-size: 20px;
+			padding: 0px 20px;
         }
 
         /* Banner de Google Ads (40% de ancho) */
@@ -735,20 +737,21 @@ menuHorizontal.addEventListener('mouseleave', () => {
         /* Texto central que ocupa todo el ancho */
         #seccion-dinamica .texto-central {
             width: 100%;
-            padding: 20px;
             box-sizing: border-box;
 		   
         }
 	  #seccion-dinamica .texto-central h2 {
             margin: 0;
-            font-size: 20px;
+            font-size: 22px;
             color: #333;
+			padding: 0px 20px;
         }
 
         #seccion-dinamica .texto-central p {
             color: #555;
             line-height: 1.6;
-			font-size: 18px;
+			font-size: 20px;
+			padding: 0px 20px;
         }
 
         /* Estilos para dispositivos pequeños */
@@ -769,33 +772,39 @@ menuHorizontal.addEventListener('mouseleave', () => {
                 width: 100%;
                 margin-top: 20px; /* Añadir espacio entre el subtítulo y el banner */
             }
-
-            /* Texto central */
-            #seccion-dinamica .texto-central {
-                width: 100%;
-            }
-			   #seccion-dinamica .texto-central {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-		    font-size: 16px;
+		  #seccion-dinamica .texto-central h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+			padding: 0px 13px;
         }
-		  #seccion-dinamica .subtitulo p {
+
+        #seccion-dinamica .texto-central p {
             color: #555;
             line-height: 1.6;
-			font-size: 16px;
+			font-size: 18px;
+			padding: 0px 13px;
         }
-				   /* Subtítulo (60% de ancho) */
+
+		    #seccion-dinamica .subtitulo h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+			  padding: 0px 13px;
+        }
+
+        #seccion-dinamica .subtitulo p {
+            color: #555;
+            line-height: 1.6;
+			font-size: 18px;
+			padding: 0px 13px;
+        }
+	   /* Subtítulo (60% de ancho) */
         #seccion-dinamica .subtitulo {
-            padding: 10px;
             box-sizing: border-box;
 			margin-bottom: -50px;
         }
-		 #seccion-dinamica .texto-central {
-            padding: 10px;
-            box-sizing: border-box;
-        }
-		        #seccion-dinamica #titulo-pagina {
+		   #seccion-dinamica #titulo-pagina {
             text-align: center;
             font-size: 38px;
             color: #333;
@@ -809,39 +818,42 @@ menuHorizontal.addEventListener('mouseleave', () => {
                 align-items: stretch;
             }
 
-            /* Subtítulo ocupa el 100% de ancho */
-            #seccion-dinamica .subtitulo {
-                width: 100%;
-            }
-
             /* Banner ocupa el 100% de ancho */
             #seccion-dinamica .banner {
                 width: 100%;
                 margin-top: 20px; /* Añadir espacio entre el subtítulo y el banner */
             }
 
-            /* Texto central */
-            #seccion-dinamica .texto-central {
-                width: 100%;
-				   padding: 0px;
-            }
-			   #seccion-dinamica .texto-central p {
-            width: 100%;
-            padding: 4px;
-            box-sizing: border-box;
-		    font-size: 14px;
-        }
-		  #seccion-dinamica .subtitulo p {
-            color: #555;
-            line-height: 1.6;
-			font-size: 14px;
-        }
-		
 		   /* Subtítulo (60% de ancho) */
         #seccion-dinamica .subtitulo {
-            padding: 4px;
-            box-sizing: border-box;
 			margin-bottom: -50px;
+        }
+		  #seccion-dinamica .texto-central h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+			padding: 0px 10px;
+        }
+
+        #seccion-dinamica .texto-central p {
+            color: #555;
+            line-height: 1.6;
+			font-size: 16px;
+			padding: 0px 10px;
+        }
+
+		    #seccion-dinamica .subtitulo h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+			  padding: 0px 10px;
+        }
+
+        #seccion-dinamica .subtitulo p {
+            color: #555;
+            line-height: 1.6;
+			font-size: 16px;
+			padding: 0px 10px;
         }
 
 		    #seccion-dinamica #titulo-pagina {
@@ -918,7 +930,7 @@ Cómo aplicarlo bien: analiza tus necesidades reales y no contrates pólizas sol
 	    
 		
 		<style>
-        /* Estilo para el contenedor del banner (ID único para evitar conflictos) */
+      /* Estilo para el contenedor del banner (ID único para evitar conflictos) */
         #banner-ads {
 		    font-family: Arial, sans-serif;
             width: 100%;
@@ -934,19 +946,20 @@ Cómo aplicarlo bien: analiza tus necesidades reales y no contrates pólizas sol
 
         /* Estilo para el subtítulo */
         .subtitle {
-            width: 97%;
+            width: 100%;
             margin: 20px auto; /* Centrado */
-            font-size: 18px;
             text-align: ;
             color: #333;
 		
         }
 		.subtitle h2 {
-            font-size: 20px;
+            font-size: 22px;
+		    padding: 0px 20px;			
         }
 		.subtitle p {
-            font-size: 18px;
-            line-height: 1.6;			
+            font-size: 20px;
+            line-height: 1.6;	
+		    padding: 0px 20px;						
         }
 		
 
@@ -957,23 +970,39 @@ Cómo aplicarlo bien: analiza tus necesidades reales y no contrates pólizas sol
 		
 		@media (max-width: 950px) {
            .subtitle {
-            width: 97%;
+            width: 100%;
             margin: 20px auto; /* Centrado */
-            font-size: 17px;
             text-align: ;
-            color: #333;
 			 
+        }
+		.subtitle h2 {
+            font-size: 20px;
+		    padding: 10px;			
+        }
+		.subtitle p {
+            font-size: 18px;
+            line-height: 1.6;
+			 padding: 13px;			
+            			
         }
 		 }
 	    
 		@media (max-width: 500px)  {      
      		.subtitle {
-            width: 97%;
+            width: 100%;
             margin: 20px auto; /* Centrado */
-         	font-size: 14px;
             text-align: ;
             color: #333;
-	
+		   
+        }
+		.subtitle h2 {
+            font-size: 18px;
+		   padding: 10px;			
+        }
+		.subtitle p {
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 0px 10px;			
         }
 		 }
 		
@@ -1299,5 +1328,6 @@ Cómo aplicarlo bien: evalúa tu situación personal y financiera, compara disti
 
 
     
+
 
 
