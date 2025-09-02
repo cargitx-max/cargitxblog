@@ -968,7 +968,7 @@ Cómo aplicarlo bien: analiza tus necesidades reales y no contrates pólizas sol
             display: block;
         }
 		
-		@media (max-width: 950px) {
+		@media (max-width: 850px) {
            .subtitle {
             width: 100%;
             margin: 20px auto; /* Centrado */
@@ -987,7 +987,7 @@ Cómo aplicarlo bien: analiza tus necesidades reales y no contrates pólizas sol
         }
 		 }
 	    
-		@media (max-width: 500px)  {      
+		@media (max-width: 580px)  {      
      		.subtitle {
             width: 100%;
             margin: 20px auto; /* Centrado */
@@ -1004,9 +1004,8 @@ Cómo aplicarlo bien: analiza tus necesidades reales y no contrates pólizas sol
             line-height: 1.6;
             padding: 0px 10px;			
         }
-		 }
-		
-		
+	
+			
     </style>
 </head>
 <body>
@@ -1014,15 +1013,6 @@ Cómo aplicarlo bien: analiza tus necesidades reales y no contrates pólizas sol
     <!-- Contenedor para el banner de Google Ads (con ID único para evitar interferencias) -->
     <div id="banner-ads">
         <!-- Aquí se coloca el código de tu anuncio de Google Ads -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-XXXXXX"   <!-- Sustituye por tu propio ID -->
-             data-ad-slot="XXXXXX"             <!-- Coloca el ID del anuncio -->
-             data-ad-format="auto"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
     </div>
 
     <!-- Subtítulo que ocupa el 90% del ancho de la página -->
@@ -1093,22 +1083,30 @@ Cómo aplicarlo bien: evalúa tu situación personal y financiera, compara disti
         }
 
         /* Contenedor del banner de Google Ads (solo dentro de #1050) */
-        #g1050 .banner-ads {
-            width: 80%;
-            height: 50px;
-            background-color: #e0e0e0;
+        #g1050 .banner-adsfin {
+            width: 99%;
+            max-height: 400px;
             margin-top: 20px;
             border-radius: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+ /* Para dispositivos grandes */
+    @media (max-width: 850px) {
+       .banner-adsfin {
+        height: 350px;
+      }
+    }
 
-        #g1050 .banner-ads span {
-            font-size: 16px;
-            color: #555;
-        }
-
+    /* Para dispositivos pequeños */
+    @media (max-width: 580px) {
+       .banner-adsfin {
+        max-height: 500px;
+		max-width: 465px;   
+      }
+    }
+			
     </style>
 </head>
 <body>
@@ -1130,16 +1128,17 @@ Cómo aplicarlo bien: evalúa tu situación personal y financiera, compara disti
     <div class="linea-separadora"></div>
 
     <!-- Banner de Google Ads (real) -->
-    <div class="banner-ads" style="text-align:center; margin: 20px 0;">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-             data-ad-slot="1234567890"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+    <div class="banner-adsfin">
+           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8980056699793558"
+     crssorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8980056699793558"
+     data-ad-slot="4039181618"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
     </div>
 </div> 
 		
@@ -1328,6 +1327,7 @@ Cómo aplicarlo bien: evalúa tu situación personal y financiera, compara disti
 
 
     
+
 
 
 
