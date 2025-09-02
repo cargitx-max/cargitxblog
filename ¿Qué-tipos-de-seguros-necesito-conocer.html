@@ -59,13 +59,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-	  height: 80px;	
+	  height: 70px;	
     }
 	
     /* Para dispositivos grandes */
     @media (max-width: 850px) {
       .anuncio {
-        height: 70px;
+        height: 60px;
       }
     }
 
@@ -667,7 +667,7 @@ menuHorizontal.addEventListener('mouseleave', () => {
 
 		 
 	  #seccion-dinamica  {
-            font-family: Arial, sans-serif;
+           font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #fff; /* Fondo blanco */
@@ -721,18 +721,8 @@ menuHorizontal.addEventListener('mouseleave', () => {
         /* Banner de Google Ads (40% de ancho) */
         #seccion-dinamica .banner {
             width: 40%;
-            text-align: center;
             padding: 20px;
             box-sizing: border-box;
-        }
-
-        #seccion-dinamica .anuncio {
-            width: 100%;
-            height: 90px; /* Tamaño típico de un banner */
-            background-color: #ddd; /* Gris para simular el banner */
-            line-height: 90px;
-            font-size: 16px;
-            color: #333;
         }
 
         /* Texto central que ocupa todo el ancho */
@@ -756,7 +746,7 @@ menuHorizontal.addEventListener('mouseleave', () => {
         }
 
         /* Estilos para dispositivos pequeños */
-        @media (max-width: 950px) {
+        @media (max-width: 800px) {
             /* Subtítulo y Banner en disposición vertical */
             #seccion-dinamica .top-section {
                 flex-direction: column;
@@ -772,6 +762,7 @@ menuHorizontal.addEventListener('mouseleave', () => {
             #seccion-dinamica .banner {
                 width: 100%;
                 margin-top: 20px; /* Añadir espacio entre el subtítulo y el banner */
+				max-height: 360px;
             }
 		  #seccion-dinamica .texto-central h2 {
             margin: 0;
@@ -812,7 +803,7 @@ menuHorizontal.addEventListener('mouseleave', () => {
             margin-bottom: 20px;
         }
           }
-		  @media (max-width: 500px) {
+		  @media (max-width: 580px) {
             /* Subtítulo y Banner en disposición vertical */
             #seccion-dinamica .top-section {
                 flex-direction: column;
@@ -823,6 +814,7 @@ menuHorizontal.addEventListener('mouseleave', () => {
             #seccion-dinamica .banner {
                 width: 100%;
                 margin-top: 20px; /* Añadir espacio entre el subtítulo y el banner */
+			    max-height: 250px;
             }
 
 		   /* Subtítulo (60% de ancho) */
@@ -888,16 +880,18 @@ En esta guía</p>
 
         <!-- Banner de Google Ads (real) -->
         <div class="banner">
-            <div class="anuncio" style="text-align:center; margin: 20px 0;">
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                    data-ad-slot="1234567890"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8980056699793558"
+     crossorigin="anonymous"></script>
+<!-- BANER MEDIO ALTO -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8980056699793558"
+     data-ad-slot="8525221537"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
             </div>
         </div>
     </div>
@@ -934,11 +928,9 @@ Cómo aplicarlo bien: analiza tus necesidades reales y no contrates pólizas sol
       /* Estilo para el contenedor del banner (ID único para evitar conflictos) */
         #banner-ads {
 		    font-family: Arial, sans-serif;
-            width: 100%;
-            max-width: 100%; /* Asegura que no exceda el tamaño de la página */
-            height: 90px; /* Ajusta el tamaño del banner según tu preferencia */
-            background-color: #f1f1f1; /* Color de fondo */
-            overflow: hidden; /* Evita que se "filtren" elementos fuera del contenedor */
+            width: 99%;
+			max-height: 500;
+            background-color: #fff; /* Color de fondo */
             display: flex;
             justify-content: center; /* Centra el banner en la página */
             align-items: center; /* Centra verticalmente */
@@ -962,14 +954,8 @@ Cómo aplicarlo bien: analiza tus necesidades reales y no contrates pólizas sol
             line-height: 1.6;	
 		    padding: 0px 20px;						
         }
-		
-
-        /* Evitar que el código de Google Ads se vea afectado por otros estilos */
-        #banner-ads ins.adsbygoogle {
-            display: block;
-        }
-		
-		@media (max-width: 850px) {
+				
+		@media (max-width: 800px) {
            .subtitle {
             width: 100%;
             margin: 20px auto; /* Centrado */
@@ -986,6 +972,9 @@ Cómo aplicarlo bien: analiza tus necesidades reales y no contrates pólizas sol
 			 padding: 13px;			
             			
         }
+			    #banner-ads {
+		       max-height: 356px;	
+		 }
 		 }
 	    
 		@media (max-width: 580px)  {      
@@ -1005,8 +994,11 @@ Cómo aplicarlo bien: analiza tus necesidades reales y no contrates pólizas sol
             line-height: 1.6;
             padding: 0px 10px;			
         }
-	
-			
+		  	    #banner-ads {
+		       max-height: 356px;	
+		 }
+		 }
+		
     </style>
 </head>
 <body>
@@ -1014,6 +1006,16 @@ Cómo aplicarlo bien: analiza tus necesidades reales y no contrates pólizas sol
     <!-- Contenedor para el banner de Google Ads (con ID único para evitar interferencias) -->
     <div id="banner-ads">
         <!-- Aquí se coloca el código de tu anuncio de Google Ads -->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8980056699793558"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8980056699793558"
+     data-ad-slot="8445067154"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
     </div>
 
     <!-- Subtítulo que ocupa el 90% del ancho de la página -->
@@ -1328,6 +1330,7 @@ Cómo aplicarlo bien: evalúa tu situación personal y financiera, compara disti
 
 
     
+
 
 
 
