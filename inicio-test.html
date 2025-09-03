@@ -942,19 +942,6 @@ menuHorizontal.addEventListener('mouseleave', () => {
       justify-content: space-between;
       align-items: center;
       border: 2px solid #e0e0e0;
-      opacity: 0;
-      animation: slideUp 0.6s ease-out forwards;
-    }
-
-    @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translate(-50%, 100%);
-      }
-      to {
-        opacity: 1;
-        transform: translate(-50%, 0);
-      }
     }
 
     .cookie-message {
@@ -997,7 +984,7 @@ menuHorizontal.addEventListener('mouseleave', () => {
       outline: none;
     }
 
-    /* Ocultar el banner de cookies cuando ya se haya aceptado */
+    /* Ocultar el banner de cookies */
     .hidden {
       display: none !important;
     }
@@ -1057,6 +1044,7 @@ menuHorizontal.addEventListener('mouseleave', () => {
 
 
     
+
 
 
 
