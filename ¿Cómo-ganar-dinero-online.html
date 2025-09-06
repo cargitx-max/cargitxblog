@@ -1297,13 +1297,131 @@ Cómo aplicarlo bien: piensa en estas ganancias como un ingreso secundario para 
         </footer>
     </div>
 
+<style>
+  #cookie-banner {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #ffffff;
+      color: #333;
+      padding: 20px 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+      width: 90%;
+      max-width: 600px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 2px solid #e0e0e0;
+    }
+
+    .cookie-message {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.5;
+      flex: 1;
+    }
+
+    .cookie-message strong {
+      color: #000;
+    }
+
+    .cookie-message a {
+      color: #007bff;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    #accept-btn {
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+      padding: 12px 25px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      margin-left: 20px;
+      white-space: nowrap;
+    }
+
+    #accept-btn:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    #accept-btn:focus {
+      outline: none;
+    }
+
+    /* Ocultar el banner de cookies */
+    .hidden {
+      display: none !important;
+    }
+
+    /* Responsividad para dispositivos móviles */
+    @media (max-width: 480px) {
+      #cookie-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+        padding: 15px 20px;
+      }
+
+      .cookie-message {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #accept-btn {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        padding: 12px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Banner de cookies -->
+  <div id="cookie-banner">
+    <p class="cookie-message">
+      🍪 <strong>Usamos cookies</strong> para personalizar tu experiencia. 
+      Al continuar navegando, aceptas nuestra 
+      <a href="/politica-de-privacidad" target="_blank">Política de Privacidad</a>.
+    </p>
+    <button id="accept-btn">Aceptar y continuar</button>
+  </div>
+
+  <script>
+    // Verifica si el usuario ya aceptó las cookies
+    if (localStorage.getItem('cookies-accepted') === 'true') {
+      document.getElementById('cookie-banner').classList.add('hidden');  // Si ya se aceptaron, oculta el banner
+    }
+
+    // Cuando el usuario hace clic en "Aceptar"
+    document.getElementById('accept-btn').addEventListener('click', function () {
+      localStorage.setItem('cookies-accepted', 'true');  // Guarda la aceptación en el almacenamiento local
+      document.getElementById('cookie-banner').classList.add('hidden');  // Oculta el banner
+    });
+  </script>
 </body>
 </html>
+
+
+
+
 
 
 	
 
 
     
+
 
 
