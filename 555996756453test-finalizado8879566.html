@@ -987,9 +987,8 @@ menuHorizontal.addEventListener('mouseleave', () => {
     </div>
   </style>
   
-		  <style>
-        /* Estilo general del body (sin afectar a #1050) */
-        /* Contenedor principal con id #1050 */
+		 
+			<style>
         #g1050 {
             display: flex;
             flex-direction: column; /* Alinea los elementos de arriba a abajo */
@@ -997,8 +996,29 @@ menuHorizontal.addEventListener('mouseleave', () => {
             align-items: center;     /* Centra los elementos verticalmente */
             height: ;           /* Toma toda la altura de la ventana */
             padding: 20px;
+			   
         }
-		
+
+        /* Estilo del botón (solo dentro de #1050) */
+        #g1050 .boton { 
+            padding: 12px 45px; /* Relleno del botón */
+            font-size: 16px;     /* Tamaño de la fuente */
+            background-color: #007BFF; /* Fondo azul */
+            color: white;        /* Texto blanco */
+            border: 2px solid #007BFF;  /* Borde sutil en el botón */
+            border-radius: 15px;  /* Bordes redondeados */
+            cursor: pointer;     /* Cambia el cursor al pasar sobre el botón */
+            transition: all 0.3s ease; /* Transición suave */
+			text-decoration: none;
+        }
+
+        /* Efecto hover del botón (solo dentro de #1050) */
+        #g1050 .boton:hover {
+            background-color: #0056b3; /* Cambia el fondo a blanco al pasar el ratón */
+            color: #fff; /* Cambia el color del texto */
+            border-color: #0056b3; /* Cambia el borde a un azul más oscuro */
+        }
+
         /* Estilo para el texto de los términos (solo dentro de #1050) */
         #g1050 .terminos {
             margin-top: 20px;
@@ -1025,29 +1045,41 @@ menuHorizontal.addEventListener('mouseleave', () => {
         }
 
         /* Contenedor del banner de Google Ads (solo dentro de #1050) */
-        #g1050 .banner-ads {
-            width: 80%;
-            height: 50px;
-            background-color: #e0e0e0;
+        #g1050 .banner-adsfin {
+            width: 99%;
+            max-height: 400px;
             margin-top: 20px;
             border-radius: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+ /* Para dispositivos grandes */
+    @media (max-width: 850px) {
+       .banner-adsfin {
+        height: 350px;
+      }
+    }
 
-        #g1050 .banner-ads span {
-            font-size: 16px;
-            color: #555;
-        }
-
+    /* Para dispositivos pequeños */
+    @media (max-width: 580px) {
+       .banner-adsfin {
+        max-height: 500px;
+		max-width: 465px;   
+      }
+    }
+			
     </style>
-    <!-- Script de Google Ads (colócalo solo una vez por página) -->
+</head>
+<body>
+<!-- Script de Google Ads (colócalo solo una vez por página) -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
 
 <!-- Todo el contenido envuelto en el id "g1050" -->
 <div id="g1050">
-   
+
+     <a href="/inicio-test" class="boton">iniciar test</button> </a>
+    
     <!-- Texto de términos y condiciones -->
     <div class="terminos">
         <p>Recuerda que Cargitx Blog no está asociado a ninguna página de recompensas. Tampoco solicitamos datos personales. Por favor, revisa nuestros 
@@ -1058,20 +1090,21 @@ menuHorizontal.addEventListener('mouseleave', () => {
     <div class="linea-separadora"></div>
 
     <!-- Banner de Google Ads (real) -->
-    <div class="banner-ads" style="text-align:center; margin: 20px 0;">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-             data-ad-slot="1234567890"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+    <div class="banner-adsfin">
+           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8980056699793558"
+     crssorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8980056699793558"
+     data-ad-slot="4039181618"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
     </div>
-</div>
-	    </style>
-		
+</div> 
+		<style>
+			
 		<style>
    
         /* Estilos específicos para el footer con id p5040 */
@@ -1136,6 +1169,7 @@ menuHorizontal.addEventListener('mouseleave', () => {
 
 
     
+
 
 
 
