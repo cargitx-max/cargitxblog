@@ -657,7 +657,17 @@ menuHorizontal.addEventListener('mouseleave', () => {
       border-radius: 8px;
       
     }
-
+  
+        #banner-ads {
+		    font-family: Arial, sans-serif;
+            width: 99%;
+			max-height: 500;
+            background-color: #fff; /* Color de fondo */
+            display: flex;
+            justify-content: center; /* Centra el banner en la página */
+            align-items: center; /* Centra verticalmente */
+	        font-family: Arial, sans-serif;
+        }
     /* Título */
     h1 {
       text-align: center;
@@ -689,22 +699,26 @@ menuHorizontal.addEventListener('mouseleave', () => {
       color: #555;
     }
 
-    /* Anuncio de Google Ads */
-    .ads {
-      background-color: #e2e2e2;
-      padding: 10px;
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 1rem;
-      color: #444;
-    }
-
     /* Línea divisora */
     .divider {
       width: 90%;
       margin: 20px auto;
       border: 1px solid #ddd;
     }
+	@media (max-width: 800px) {
+     
+		  .banner-ads {
+	  max-height: 356px;	
+		 }
+		 }
+	    
+		@media (max-width: 580px)  {      
+     
+		    .banner-ads {
+		       max-height: 356px;	
+		 }
+		 }
+			 
   </style>
   <div class="container">
     <!-- Título -->
@@ -720,20 +734,19 @@ menuHorizontal.addEventListener('mouseleave', () => {
       Esperamos que este test le haya servido de ayuda. Si tiene alguna duda o consulta, no dude en contactarnos.
     </p>
     
-    <!-- Anuncio de Google Ads -->
-    <div class="ads">
-      <!-- Reemplaza con tu propio ID de Google Ads -->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <ins class="adsbygoogle"
-           style="display:block; text-align:center;"
-           data-ad-client="ca-pub-XXXXXXXXXXXXXXX"   <!-- Tu ID de cliente -->
-           data-ad-slot="XXXXXXXXXX"                  <!-- Tu ID de slot -->
-           data-ad-format="auto"></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+ <div id="banner-ads">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8980056699793558"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8980056699793558"
+     data-ad-slot="8445067154"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
     </div>
-    
+	  
     <!-- Línea divisora -->
     <hr class="divider">
   </div>
@@ -1123,5 +1136,6 @@ menuHorizontal.addEventListener('mouseleave', () => {
 
 
     
+
 
 
