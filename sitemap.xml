@@ -1,11 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cargitxblog.pages.dev/</loc>
+    <loc>https://cargitxblog.pages.dev/quienes-somos</loc>
     <lastmod>2025-09-06</lastmod>
-    <priority>1.00</priority>
+    <priority>0.80</priority>
   </url>
-
+  <url>
+    <loc>https://cargitxblog.pages.dev/¿Cómo-organizar-mi-dinero</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cargitxblog.pages.dev/¿Cómo-empezar-a-invertir</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cargitxblog.pages.dev/¿Por-qué-es-importante-la-educación-financiera</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cargitxblog.pages.dev/¿Qué-errores-financieros-debo-evitar</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cargitxblog.pages.dev/¿Cómo-salir-de-deudas-sin-afectar-mi-vida</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cargitxblog.pages.dev/¿Qué-tipos-de-seguros-necesito-conocer</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cargitxblog.pages.dev/¿Cómo-elegir-el-mejor-seguro-de-salud</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cargitxblog.pages.dev/¿Cómo-ganar-dinero-online</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cargitxblog.pages.dev/¿Qué-son-los-muros-de-ofertas-y-cómo-usarlos</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cargitxblog.pages.dev/¿Qué-errores-evitar-al-ganar-recompensas-online</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cargitxblog.pages.dev/¿Cómo-funcionan-los-programas-de-afiliados</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <!-- Nuevas URLs agregadas -->
+  <url>
+    <loc>https://cargitxblog.pages.dev/inicio-test</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cargitxblog.pages.dev/terminos</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://cargitxblog.pages.dev/politica-privacidad</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>0.60</priority>
+  </url>
 </urlset>
