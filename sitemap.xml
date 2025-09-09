@@ -1,4 +1,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página principal -->
+  <url>
+    <loc>https://cargitxblog.pages.dev/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <priority>1.00</priority> <!-- Página principal con mayor prioridad -->
+  </url>
+
+  <!-- Otras URLs importantes con prioridad 0.80 -->
   <url>
     <loc>https://cargitxblog.pages.dev/quienes-somos</loc>
     <lastmod>2025-09-06</lastmod>
@@ -59,20 +67,21 @@
     <lastmod>2025-09-06</lastmod>
     <priority>0.80</priority>
   </url>
+
   <!-- Nuevas URLs agregadas -->
   <url>
     <loc>https://cargitxblog.pages.dev/inicio-test</loc>
     <lastmod>2025-09-06</lastmod>
-    <priority>0.80</priority>
+    <priority>0.80</priority> <!-- URL de test con prioridad 0.80 -->
   </url>
   <url>
     <loc>https://cargitxblog.pages.dev/terminos</loc>
     <lastmod>2025-09-06</lastmod>
-    <priority>0.60</priority>
+    <priority>0.60</priority> <!-- Páginas de términos con prioridad menor -->
   </url>
   <url>
     <loc>https://cargitxblog.pages.dev/politica-privacidad</loc>
     <lastmod>2025-09-06</lastmod>
-    <priority>0.60</priority>
+    <priority>0.60</priority> <!-- Páginas de política de privacidad con prioridad menor -->
   </url>
 </urlset>
