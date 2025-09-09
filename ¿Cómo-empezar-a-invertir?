@@ -11,10 +11,8 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Cargitx Blog">
 
-    <!-- Favicon -->
 <link rel="icon" href="https://imag.cargitx.com/logob.png" type="image/x-icon">
 
-    <!-- Google Analytics -->
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6K3V8SVCC3"></script>
 <script>
@@ -42,17 +40,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	
-    <style>
-  /* Estilos generales */
+<style>
     body {
 	    font-family: 'Roboto', sans-serif;
-        margin: 0; /* Elimina el margen predeterminado del navegador. */
-        padding: 0; /* Elimina el padding predeterminado del navegador. */
+        margin: 0; 
+        padding: 0; 
 		width: 100%;
         min-width: 322px;
     }
 
-    /* Estilos para el contenedor del anuncio */
     .anuncio {
       width: 99%;
       background-color: #fff;
@@ -62,14 +58,12 @@
 	  height: 70px;	
     }
 	
-    /* Para dispositivos grandes */
     @media (max-width: 850px) {
       .anuncio {
         height: 60px;
       }
     }
 
-    /* Para dispositivos pequeños */
     @media (max-width: 580px) {
       .anuncio {
         height: 52px;
@@ -79,7 +73,6 @@
 </head>
 <body>
 
-  <!-- Contenedor del anuncio -->
   <div class="anuncio">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8980056699793558"
      crossorigin="anonymous"></script>
@@ -100,7 +93,6 @@
 <div id="j1123">
 	 
  <style>
-       /* Estilos generales para el segundo menú */
         #menu2-container * {
             margin: 0;
             padding: 0;
@@ -112,7 +104,6 @@
             color: #333;
         }
 
-        /* Estilos del encabezado */
         #menu2-container header {
             display: flex;
             justify-content: space-between;
@@ -126,7 +117,6 @@
             position: relative;
         }
 
-        /* Logo */
         #menu2-container .logo {
             font-size: 36px;
             font-weight: 800;
@@ -137,11 +127,9 @@
             display: flex;
             align-items: center;
             gap: 8px;
-	    	 margin-left: 0%; 
-            
+	    	 margin-left: 0%;  
         }
 
-        /* Hover en el logo */
         #menu2-container .logo:hover {
             color: #1877F2;
         }
@@ -152,7 +140,6 @@
 			 margin-left: -1; 
         }
 
-        /* Barra de menú para pantallas móviles */
         #menu2-container .menu-mobile {
             display: none;
             flex-direction: column;
@@ -289,13 +276,12 @@
 
     <div id="menu2-container">
         <header>
-            <!-- Logo -->
+			
             <div class="logo">
                   cargitx Blog
                 <i class="fas fa-chevron-down menu-toggle"></i>
             </div>
 
-            <!-- Barra de menú para dispositivos móviles -->
             <div class="menu-mobile">
                 <div class="dropdown">Inicio
                     <i class="fas fa-chevron-down"></i>
@@ -323,7 +309,6 @@
                 </div>
             </div>
 
-            <!-- Botón -->
             <a href="/inicio-test" class="btn">iniciar test</a>
         </header>
     </div>
@@ -372,19 +357,16 @@ dropdowns2.forEach(dropdown => {
 });
 
 </script>
-
 	   <style>
-        /* Estilos para el contenedor  */
         #j1123 {
 		 	display: none;
         }
         
-        /* Diseño para dispositivos pequeños */
         @media (max-width: 779px) {
             #j1123 {
                 position: relative;
                 top: 0;
-                width: 100%; /* Cambia el ancho en dispositivos pequeños */
+                width: 100%; 
 			  	display: block;
 				margin-bottom: 10px;
             }
@@ -395,7 +377,6 @@ dropdowns2.forEach(dropdown => {
  <div id="contenedor12355">
  
  <style>
-        /* Estilos generales del contenedor del menú */
         #menu-container * {
             margin: 0;
             padding: 0;
@@ -407,8 +388,7 @@ dropdowns2.forEach(dropdown => {
             background-color: #fafafa;
             color: #333;
         }
-
-        /* Estilos del encabezado */
+	 
         #menu-container header {
             display: flex;
             justify-content: space-between;
@@ -421,8 +401,7 @@ dropdowns2.forEach(dropdown => {
             margin: 0px 0;
             position: relative;
         }
-
-        /* Logo */
+	 
         #menu-container .logo {
             font-size: 42px;
             font-weight: 800;
@@ -435,7 +414,6 @@ dropdowns2.forEach(dropdown => {
             gap: 8px;
         }
 
-        /* Hover en el logo */
         #menu-container .logo:hover {
             color: #1877F2;
         }
@@ -445,7 +423,6 @@ dropdowns2.forEach(dropdown => {
             transition: transform 0.3s ease;
         }
 
-        /* Barra desplegable */
         #menu-container .menu-horizontal {
             display: none;
             position: absolute;
@@ -461,12 +438,10 @@ dropdowns2.forEach(dropdown => {
             flex-direction: row;
         }
 
-        /* Cuando el menú está activo */
         #menu-container .menu-horizontal.active {
             display: flex;
         }
 
-        /* Estilo de los items del menú */
         #menu-container .menu-horizontal > div {
             color: black;
             text-decoration: none;
@@ -482,13 +457,11 @@ dropdowns2.forEach(dropdown => {
             cursor: pointer;
         }
 
-        /* Hover en los items del menú */
         #menu-container .menu-horizontal > div:hover {
             color: #1877F2;
             transform: translateY(-2px);
         }
-
-        /* Estilo para los submenús */
+	 
         #menu-container .dropdown-content {
             display: none;
             background-color: #fff;
@@ -503,12 +476,10 @@ dropdowns2.forEach(dropdown => {
             z-index: 1;
         }
 
-        /* Cuando un submenú está activo */
         #menu-container .dropdown.active .dropdown-content {
             display: block;
         }
-
-        /* Estilo de los enlaces del submenú */
+	 
         #menu-container .dropdown-content a {
             color: black;
             text-decoration: none;
@@ -519,12 +490,10 @@ dropdowns2.forEach(dropdown => {
             transition: background-color 0.3s ease;
         }
 
-        /* Hover en los enlaces del submenú */
         #menu-container .dropdown-content a:hover {
             background-color: #f1f1f1;
         }
 
-        /* Botón */
         #menu-container .btn {
             background-color: #1877F2;
             color: white;
@@ -536,7 +505,6 @@ dropdowns2.forEach(dropdown => {
             transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
-        /* Hover en el botón */
         #menu-container .btn:hover {
             background-color: #165f9e;
             transform: translateY(-3px);
@@ -545,7 +513,6 @@ dropdowns2.forEach(dropdown => {
 </head>
 <body>
 
-    <!-- Menú con un ID único para aislarlo -->
     <div id="menu-container">
         <header>
             <!-- Logo -->
@@ -554,7 +521,6 @@ dropdowns2.forEach(dropdown => {
                 <i class="fas fa-chevron-down"></i>
             </div>
 
-            <!-- Barra desplegable horizontal -->
             <div class="menu-horizontal">
                 <div class="dropdown">Inicio
                     <i class="fas fa-chevron-down"></i>
@@ -582,7 +548,6 @@ dropdowns2.forEach(dropdown => {
                 </div>
             </div>
 
-            <!-- Botón -->
             <a href="/inicio-test" class="btn">iniciar test</a>
         </header>
     </div>
@@ -642,16 +607,14 @@ menuHorizontal.addEventListener('mouseleave', () => {
 </script>
 
     <style>
-        /* Estilos para el contenedor medio 2 */
         #contenedor12355 {
             position: relative;
-            top: 0; /* Cambia qué tan arriba está */
-            right: 0px; /* Cambia qué tan a la izquierda está */
-            width: 100%; /* Cambia el ancho del contenedor */	
+            top: 0; 
+            right: 0px; 
+            width: 100%; 
 			margin-bottom: 20px;
         }
 		
-        /* Diseño para dispositivos pequeños */
         @media (max-width: 779px) {
             #contenedor12355 {
             display: none;
@@ -668,7 +631,7 @@ menuHorizontal.addEventListener('mouseleave', () => {
            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff; /* Fondo blanco */
+            background-color: #fff; 
             color: #333;
         }
 	 
@@ -678,7 +641,6 @@ menuHorizontal.addEventListener('mouseleave', () => {
             flex-direction: column;
         }
 
-        /* Título con ID único */
         #seccion-dinamica #titulo-pagina {
             text-align: center;
             font-size: 46px;
@@ -686,7 +648,6 @@ menuHorizontal.addEventListener('mouseleave', () => {
             margin-bottom: 20px;
         }
 
-        /* Subtítulo y Banner con ID único */
         #seccion-dinamica .top-section {
             display: flex;
             width: 100%;
@@ -694,7 +655,6 @@ menuHorizontal.addEventListener('mouseleave', () => {
             align-items: flex-start;
         }
 
-        /* Subtítulo (60% de ancho) */
         #seccion-dinamica .subtitulo {
             width: 60%;
             padding: 0;
@@ -715,14 +675,12 @@ menuHorizontal.addEventListener('mouseleave', () => {
 			padding: 0px 20px;
         }
 
-        /* Banner de Google Ads (40% de ancho) */
         #seccion-dinamica .banner {
             width: 40%;
             padding: 20px;
             box-sizing: border-box;
         }
 
-        /* Texto central que ocupa todo el ancho */
         #seccion-dinamica .texto-central {
             width: 100%;
             box-sizing: border-box;
@@ -742,23 +700,19 @@ menuHorizontal.addEventListener('mouseleave', () => {
 			padding: 0px 20px;
         }
 
-        /* Estilos para dispositivos pequeños */
         @media (max-width: 800px) {
-            /* Subtítulo y Banner en disposición vertical */
             #seccion-dinamica .top-section {
                 flex-direction: column;
                 align-items: stretch;
             }
 
-            /* Subtítulo ocupa el 100% de ancho */
             #seccion-dinamica .subtitulo {
                 width: 100%;
             }
 
-            /* Banner ocupa el 100% de ancho */
             #seccion-dinamica .banner {
                 width: 100%;
-                margin-top: 20px; /* Añadir espacio entre el subtítulo y el banner */
+                margin-top: 20px; 
 				max-height: 360px;
             }
 		  #seccion-dinamica .texto-central h2 {
@@ -788,7 +742,6 @@ menuHorizontal.addEventListener('mouseleave', () => {
 			font-size: 18px;
 			padding: 0px 13px;
         }
-	   /* Subtítulo (60% de ancho) */
         #seccion-dinamica .subtitulo {
             box-sizing: border-box;
 			margin-bottom: -50px;
@@ -801,20 +754,17 @@ menuHorizontal.addEventListener('mouseleave', () => {
         }
           }
 		  @media (max-width: 580px) {
-            /* Subtítulo y Banner en disposición vertical */
             #seccion-dinamica .top-section {
                 flex-direction: column;
                 align-items: stretch;
             }
 
-            /* Banner ocupa el 100% de ancho */
             #seccion-dinamica .banner {
                 width: 100%;
-                margin-top: 20px; /* Añadir espacio entre el subtítulo y el banner */
+                margin-top: 20px; 
 			    max-height: 250px;
             }
 
-		   /* Subtítulo (60% de ancho) */
         #seccion-dinamica .subtitulo {
 			margin-bottom: -50px;
         }
@@ -857,15 +807,11 @@ menuHorizontal.addEventListener('mouseleave', () => {
     </style>
 </head>
 <body>
-<!-- Script de Google AdSense (solo debe incluirse una vez por página) -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
 
-<!-- Contenedor principal con ID único -->
 <div id="seccion-dinamica" class="contenedor">
     <!-- Título -->
     <h1 id="titulo-pagina">Cómo invertir</h1>
-
-    <!-- Sección con subtítulo y banner -->
+	
     <div class="top-section">
         <!-- Subtítulo y texto -->
         <div class="subtitulo">
@@ -873,7 +819,6 @@ menuHorizontal.addEventListener('mouseleave', () => {
             <p>Hablar de dinero puede ser incómodo, pero aprender a invertir es una de las decisiones más inteligentes para asegurar tu futuro financiero. No se trata de ser millonario ni experto en economía, sino de dar pequeños pasos que, con el tiempo, generan grandes resultados. La buena noticia es que invertir está al alcance de todos, siempre que se haga con información y estrategia. En esta guía simple y directa descubrirás cómo empezar a invertir, qué errores evitar y cómo tomar mejores decisiones con tu dinero.</p>
        	   </div>
 
-        <!-- Banner de Google Ads (real) -->
         <div class="banner">
             <div class="anuncio" style="text-align:center; margin: 20px 0;">
                 <ins class="adsbygoogle"
@@ -889,7 +834,6 @@ menuHorizontal.addEventListener('mouseleave', () => {
         </div>
     </div>
 
-    <!-- Texto central que ocupa todo el ancho -->
     <div class="texto-central">
  	   	   <h2>1. Define tus objetivos antes de invertir</h2>
 		   <p>El primer paso no es abrir una cuenta ni elegir un producto, sino tener claro qué quieres lograr. Puede ser ahorrar para tu retiro, comprar una casa, generar ingresos extra o simplemente hacer crecer tus ahorros. Tus objetivos determinarán el tipo de inversión que más te conviene.
@@ -916,22 +860,20 @@ Cómo hacerlo bien: establece de antemano cuánto invertirás y hasta dónde est
 </div>
 
 		<style>
-      /* Estilo para el contenedor del banner (ID único para evitar conflictos) */
         #banner-ads {
 		    font-family: Arial, sans-serif;
             width: 99%;
 			max-height: 500;
-            background-color: #fff; /* Color de fondo */
+            background-color: #fff; 
             display: flex;
-            justify-content: center; /* Centra el banner en la página */
-            align-items: center; /* Centra verticalmente */
+            justify-content: center; 
+            align-items: center; 
 	        font-family: Arial, sans-serif;
         }
 
-        /* Estilo para el subtítulo */
         .subtitle {
             width: 100%;
-            margin: 20px auto; /* Centrado */
+            margin: 20px auto; 
             text-align: ;
             color: #333;
 		
@@ -949,7 +891,7 @@ Cómo hacerlo bien: establece de antemano cuánto invertirás y hasta dónde est
 		@media (max-width: 800px) {
            .subtitle {
             width: 100%;
-            margin: 20px auto; /* Centrado */
+            margin: 20px auto; 
             text-align: ;
 			 
         }
@@ -971,7 +913,7 @@ Cómo hacerlo bien: establece de antemano cuánto invertirás y hasta dónde est
 		@media (max-width: 580px)  {      
      		.subtitle {
             width: 100%;
-            margin: 20px auto; /* Centrado */
+            margin: 20px auto; 
             text-align: ;
             color: #333;
 		   
@@ -994,10 +936,8 @@ Cómo hacerlo bien: establece de antemano cuánto invertirás y hasta dónde est
 </head>
 <body>
 
-    <!-- Contenedor para el banner de Google Ads (con ID único para evitar interferencias) -->
     <div id="banner-ads">
-        <!-- Aquí se coloca el código de tu anuncio de Google Ads -->
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8980056699793558"
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8980056699793558"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
      style="display:block"
@@ -1009,7 +949,6 @@ Cómo hacerlo bien: establece de antemano cuánto invertirás y hasta dónde est
 </script>
     </div>
 
-     <!-- Subtítulo que ocupa el 90% del ancho de la página -->
     <div class="subtitle">	
 	   	   <h2>8. Busca asesoría si lo necesitas</h2>
 		   <p>No todos tienen el tiempo ni el interés para convertirse en expertos financieros, y eso está bien. Contar con la guía de alguien capacitado puede ahorrarte errores costosos.
@@ -1023,35 +962,32 @@ Recuerda: invertir es sembrar para tu futuro, y mientras antes empieces, mejores
 			<style>
         #g1050 {
             display: flex;
-            flex-direction: column; /* Alinea los elementos de arriba a abajo */
-            justify-content: center; /* Centra los elementos horizontalmente */
-            align-items: center;     /* Centra los elementos verticalmente */
-            height: ;           /* Toma toda la altura de la ventana */
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;     
+            height: ;           
             padding: 20px;
 			   
         }
 
-        /* Estilo del botón (solo dentro de #1050) */
         #g1050 .boton { 
-            padding: 12px 45px; /* Relleno del botón */
-            font-size: 16px;     /* Tamaño de la fuente */
-            background-color: #007BFF; /* Fondo azul */
-            color: white;        /* Texto blanco */
-            border: 2px solid #007BFF;  /* Borde sutil en el botón */
-            border-radius: 15px;  /* Bordes redondeados */
-            cursor: pointer;     /* Cambia el cursor al pasar sobre el botón */
-            transition: all 0.3s ease; /* Transición suave */
+            padding: 12px 45px; 
+            font-size: 16px;     
+            background-color: #007BFF; 
+            color: white;        
+            border: 2px solid #007BFF;  
+            border-radius: 15px;  
+            cursor: pointer;    
+            transition: all 0.3s ease; 
 			text-decoration: none;
         }
 
-        /* Efecto hover del botón (solo dentro de #1050) */
         #g1050 .boton:hover {
-            background-color: #0056b3; /* Cambia el fondo a blanco al pasar el ratón */
-            color: #fff; /* Cambia el color del texto */
-            border-color: #0056b3; /* Cambia el borde a un azul más oscuro */
+            background-color: #0056b3; 
+            color: #fff; 
+            border-color: #0056b3; 
         }
 
-        /* Estilo para el texto de los términos (solo dentro de #1050) */
         #g1050 .terminos {
             margin-top: 20px;
             font-size: 14px;
@@ -1068,15 +1004,13 @@ Recuerda: invertir es sembrar para tu futuro, y mientras antes empieces, mejores
             text-decoration: underline;
         }
 
-        /* Línea separadora (solo dentro de #1050) */
         #g1050 .linea-separadora {
             margin-top: 20px;
-            width: 90%;           /* Ocupa el 90% del ancho */
-            height: 2px;          /* Grosor de la línea */
-            background-color: #ccc; /* Color de la línea */
+            width: 90%;          
+            height: 2px;         
+            background-color: #ccc; 
         }
 
-        /* Contenedor del banner de Google Ads (solo dentro de #1050) */
         #g1050 .banner-adsfin {
             width: 99%;
             max-height: 400px;
@@ -1086,14 +1020,13 @@ Recuerda: invertir es sembrar para tu futuro, y mientras antes empieces, mejores
             justify-content: center;
             align-items: center;
         }
- /* Para dispositivos grandes */
+ 
     @media (max-width: 850px) {
        .banner-adsfin {
         height: 350px;
       }
     }
 
-    /* Para dispositivos pequeños */
     @media (max-width: 580px) {
        .banner-adsfin {
         max-height: 500px;
@@ -1104,24 +1037,20 @@ Recuerda: invertir es sembrar para tu futuro, y mientras antes empieces, mejores
     </style>
 </head>
 <body>
-<!-- Script de Google Ads (colócalo solo una vez por página) -->
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
 
-<!-- Todo el contenido envuelto en el id "g1050" -->
 <div id="g1050">
 
      <a href="/inicio-test" class="boton">iniciar test</button> </a>
     
-    <!-- Texto de términos y condiciones -->
     <div class="terminos">
         <p>Recuerda que Cargitx Blog no está asociado a ninguna página de recompensas. Tampoco solicitamos datos personales. Por favor, revisa nuestros 
         <a href="/terminos" target="_blank">términos y condiciones</a>.</p>
     </div>
 
-    <!-- Línea separadora -->
     <div class="linea-separadora"></div>
 
-    <!-- Banner de Google Ads (real) -->
     <div class="banner-adsfin">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8980056699793558"
      crssorigin="anonymous"></script>
@@ -1257,17 +1186,16 @@ Recuerda: invertir es sembrar para tu futuro, y mientras antes empieces, mejores
     </div>
 		<style>
    
-        /* Estilos específicos para el footer con id p5040 */
         #p5040 footer {
             text-align: center;
             padding: 14px 0;
             font-size: 14px;
-            background-color: #fff; /* Fondo blanco */
+            background-color: #fff; 
             color: #333;
             position: relative;
             bottom: 0;
             width: 100%;
-            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1); /* Sombra superior */
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1); 
         }
         #p5040 footer a {
             color: #333;
@@ -1281,23 +1209,20 @@ Recuerda: invertir es sembrar para tu futuro, y mientras antes empieces, mejores
             display: inline-block;
         }
         #p5040 .social-icons img {
-            width: 30px; /* Tamaño más pequeño por defecto */
+            width: 30px;
             height: 30px;
             border-radius: 50%;
-            background-color: #3b5998; /* Fondo azul */
-            transition: transform 0.3s ease, background-color 0.3s ease; /* Suaviza el efecto de hover */
+            background-color: #3b5998; 
+            transition: transform 0.3s ease, background-color 0.3s ease; 
         }
         #p5040 .social-icons a:hover img {
-            background-color: #2d4373; /* Color de fondo más oscuro */
-            transform: scale(1.2); /* Aumenta el tamaño de la imagen al pasar el mouse */
+            background-color: #2d4373; 
+            transform: scale(1.2); 
         }
     </style>
 </head>
 <body>
 
-    <!-- Tu contenido aquí -->
-
-  <!-- Footer envuelto en el id "p5040" -->
     <div id="p5040">
         <footer>
             <p>&copy; 2025 Cargitx blog. Todos los derechos reservados.</p>
@@ -1404,7 +1329,7 @@ Recuerda: invertir es sembrar para tu futuro, y mientras antes empieces, mejores
   </style>
 </head>
 <body>
-  <!-- Banner de cookies -->
+
   <div id="cookie-banner">
     <p class="cookie-message">
       🍪 <strong>Usamos cookies</strong> para personalizar tu experiencia. 
@@ -1438,6 +1363,7 @@ Recuerda: invertir es sembrar para tu futuro, y mientras antes empieces, mejores
 
 
     
+
 
 
 
