@@ -643,10 +643,12 @@ menuHorizontal.addEventListener('mouseleave', () => {
 
     #l200 .contenedor {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr;
         gap: 20px;
-        padding: 20px;
+        padding: 20px;     
+        width: 100%; /* Esto hace que el contenedor ocupe todo el ancho disponible */
+        max-width: 800px; /* Limita el ancho máximo a 700 px */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
     }
 
     #l200 .recuadro {
@@ -723,8 +725,9 @@ menuHorizontal.addEventListener('mouseleave', () => {
 
     @media (max-width: 768px) {
         #l200 .contenedor {
-            grid-template-columns: repeat(2, 1fr);
+           grid-template-columns: 1fr;
         }
+        
     }
 
     @media (max-width: 480px) {
@@ -1123,6 +1126,7 @@ menuHorizontal.addEventListener('mouseleave', () => {
   </script>
 </body>
 </html>
+
 
 
 
