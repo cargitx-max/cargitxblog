@@ -724,17 +724,25 @@ menuHorizontal.addEventListener('mouseleave', () => {
 
 
     @media (max-width: 768px) {
+       @media (max-width: 480px) {
         #l200 .contenedor {
-           grid-template-columns: 1fr;
-        }
-        
+       grid-template-columns: 1fr;
+       display: grid;
+       grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        margin: none; /* Centra el contenedor horizontalmente */				
     }
-
+}
     @media (max-width: 480px) {
         #l200 .contenedor {
-            grid-template-columns: 1fr;
-        }
-
+       grid-template-columns: 1fr;
+       display: grid;
+       grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        margin: none; /* Centra el contenedor horizontalmente */					
+    }
         #l200 .titulo-general {
             text-align: center;
             font-size: 34px;
@@ -1126,6 +1134,7 @@ menuHorizontal.addEventListener('mouseleave', () => {
   </script>
 </body>
 </html>
+
 
 
 
