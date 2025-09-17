@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -644,10 +645,13 @@ menuHorizontal.addEventListener('mouseleave', () => {
 
     #l200 .contenedor {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr;
+	    grid-template-rows: repeat(4, auto);
         gap: 20px;
-        padding: 20px;
+        padding: 20px;     
+    
+        max-width: 800px; /* Limita el ancho máximo a 700 px */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
     }
 
     #l200 .recuadro {
@@ -723,16 +727,26 @@ menuHorizontal.addEventListener('mouseleave', () => {
 
 
     @media (max-width: 768px) {
+       @media (max-width: 480px) {
         #l200 .contenedor {
-            grid-template-columns: repeat(2, 1fr);
-        }
+       grid-template-columns: 1fr;
+       display: grid;
+       grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        margin: none; /* Centra el contenedor horizontalmente */			
     }
-
+}
     @media (max-width: 480px) {
         #l200 .contenedor {
-            grid-template-columns: 1fr;
-        }
-
+       grid-template-columns: 1fr;
+       display: grid;
+       grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        margin: none; /* Centra el contenedor horizontalmente */		
+		 
+    }
         #l200 .titulo-general {
             text-align: center;
             font-size: 34px;
@@ -750,104 +764,41 @@ menuHorizontal.addEventListener('mouseleave', () => {
    <div class="titulo-general"><h1>Explore Cargitx Blog</h1></div>
 
 <div class="contenedor">
-  <a href="/en/about-us" class="recuadro-enlace">
+
+  <a href="/es/web/" class="recuadro-enlace">
     <div class="recuadro">
-      <img src="https://imag.cargitx.com/en/Diseño sin título (11).png" alt="Image 1" class="imagen" />
-      <div class="titulo"><h2>What is Cargitx Blog?</h2></div>
-      <div class="subtitulo"><p>Discover ideas, resources, and valuable content</p></div>
+      <img src="https://imag.cargitx.com/indexes/Cargitxblogima.png" alt="Imagen 1" class="imagen">
+      <div class="titulo"><h2>Cargitx blog</h2></div>
+      <div class="subtitulo"><p>"Financial tips, health, diseases, and well-being."</p></div>
     </div>
   </a>
 
-  <a href="/en/how-to-manage-my-money" class="recuadro-enlace">
+  <a href="/es/noticias" class="recuadro-enlace">
     <div class="recuadro">
-      <img src="https://imag.cargitx.com/en/Diseño sin título (12).png" alt="Image 2" class="imagen" />
-      <div class="titulo"><h2>How to Manage My Money?</h2></div>
-      <div class="subtitulo"><p>Easy and practical control of your daily personal finances</p></div>
+      <img src="https://imag.cargitx.com/indexes/Cargitxnoticiaima.png" alt="Imagen 12" class="imagen">
+      <div class="titulo"><h2>Cargitx News</h2></div>
+      <div class="subtitulo"><p>Latest news, analysis, and constant updates.</p></div>
     </div>
   </a>
-
-  <a href="/en/how-to-start-investing" class="recuadro-enlace">
+		  
+  <a href="/es/extra" class="recuadro-enlace">
     <div class="recuadro">
-      <img src="https://imag.cargitx.com/en/Diseño sin título (13).png" alt="Image 3" class="imagen" />
-      <div class="titulo"><h2>How to Start Investing?</h2></div>
-      <div class="subtitulo"><p>Avoid common pitfalls with your money and savings</p></div>
+      <img src="https://imag.cargitx.com/indexes/cargitxextraima.png" alt="Imagen 8" class="imagen">
+      <div class="titulo"><h2>Cargitx Extra</h2></div>
+      <div class="subtitulo"><p>Recommendations, comparisons, and useful tips.</p></div>
     </div>
   </a>
-
-  <a href="/en/why-is-financial-education-important" class="recuadro-enlace">
+		  
+  <a href="/quienes-somos" class="recuadro-enlace">
     <div class="recuadro">
-      <img src="https://imag.cargitx.com/en/Diseño sin título (14).png" alt="Image 4" class="imagen" />
-      <div class="titulo"><h2>Why is Financial Education Important?</h2></div>
-      <div class="subtitulo"><p>Simple and safe investments from scratch for beginners</p></div>
+      <img src="https://imag.cargitx.com/indexes/queescargitxblog.png" alt="Imagen 1" class="imagen">
+      <div class="titulo"><h2> What is Cargitx blog </h2></div>
+      <div class="subtitulo"><p>Discover ideas, resources, and valuable content.</p></div>
     </div>
-  </a>
-
-  <a href="/en/what-financial-mistakes-should-i-avoid" class="recuadro-enlace">
-    <div class="recuadro">
-      <img src="https://imag.cargitx.com/en/Diseño sin título (15).png" alt="Image 5" class="imagen" />
-      <div class="titulo"><h2>What Financial Mistakes Should I Avoid?</h2></div>
-      <div class="subtitulo"><p>Learn to manage your money and future better</p></div>
-    </div>
-  </a>
-
-  <a href="/en/how-to-get-out-of-debt-without-affecting-my-life" class="recuadro-enlace">
-    <div class="recuadro">
-      <img src="https://imag.cargitx.com/en/Diseño sin título (16).png" alt="Image 6" class="imagen" />
-      <div class="titulo"><h2>How to Get Out of Debt Without Affecting My Life?</h2></div>
-      <div class="subtitulo"><p>Free yourself from debt without sacrificing your daily life</p></div>
-    </div>
-  </a>
-
-  <a href="/en/what-types-of-insurance-should-i-know" class="recuadro-enlace">
-    <div class="recuadro">
-      <img src="https://imag.cargitx.com/en/Diseño sin título (17).png" alt="Image 7" class="imagen" />
-      <div class="titulo"><h2>What Types of Insurance Should I Know?</h2></div>
-      <div class="subtitulo"><p>Discover essential insurance to protect your life and assets</p></div>
-    </div>
-  </a>
-
-  <a href="/en/how-to-choose-the-best-health-insurance" class="recuadro-enlace">
-    <div class="recuadro">
-      <img src="https://imag.cargitx.com/en/Diseño sin título (18).png" alt="Image 8" class="imagen" />
-      <div class="titulo"><h2>How to Choose the Best Health Insurance?</h2></div>
-      <div class="subtitulo"><p>Choose health insurance that really covers you</p></div>
-    </div>
-  </a>
-
-  <a href="/en/how-to-make-money-online" class="recuadro-enlace">
-    <div class="recuadro">
-      <img src="https://imag.cargitx.com/en/Diseño sin título (19).png" alt="Image 9" class="imagen" />
-      <div class="titulo"><h2>How to Make Money with Online Surveys?</h2></div>
-      <div class="subtitulo"><p>Learn to easily earn money by completing online surveys</p></div>
-    </div>
-  </a>
-
-  <a href="/en/what-are-offer-walls-and-how-to-use-them" class="recuadro-enlace">
-    <div class="recuadro">
-      <img src="https://imag.cargitx.com/en/Diseño sin título (20).png" alt="Image 10" class="imagen" />
-      <div class="titulo"><h2>What Are Offer Walls and How to Use Them?</h2></div>
-      <div class="subtitulo"><p>Learn about offer walls and take advantage of their rewards</p></div>
-    </div>
-  </a>
-
-  <a href="/en/what-mistakes-to-avoid-when-earning-online-rewards" class="recuadro-enlace">
-    <div class="recuadro">
-      <img src="https://imag.cargitx.com/en/Diseño sin título (21).png" alt="Image 11" class="imagen" />
-      <div class="titulo"><h2>What Mistakes to Avoid When Earning Online Rewards?</h2></div>
-      <div class="subtitulo"><p>Avoid common mistakes and don’t lose your online rewards</p></div>
-    </div>
-  </a>
-
-  <a href="/en/how-do-affiliate-programs-work" class="recuadro-enlace">
-    <div class="recuadro">
-      <img src="https://imag.cargitx.com/en/Diseño sin título (22).png" alt="Image 12" class="imagen" />
-      <div class="titulo"><h2>How Do Affiliate Programs Work?</h2></div>
-      <div class="subtitulo"><p>Generate extra income with reliable affiliate programs</p></div>
-    </div>
-  </a>
+  </a>	  
+</div> 
+ 
 </div>
-</div>
-
 	
 <style>
 	#g1050 {
